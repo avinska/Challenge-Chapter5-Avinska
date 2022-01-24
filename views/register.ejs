@@ -1,0 +1,24 @@
+<%- include('partials/header') %> 
+    
+<main class="form-signin">
+  <form action="/register" method="POST">
+    <img class="mb-4" src="assets/suit/logo-1.png" alt="" width="100" height="100">
+    <h1 class="h3 mb-3 fw-normal">SIGN UP</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="username" name="username" placeholder="Username" autocomplete="off" >
+      <label for="floatingInput">Username</label>
+    </div>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" autocomplete="off" >
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="password" name="password" placeholder="Password" autocomplete="off" >
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-dark mb-5" type="submit">Sign up</button>
+  </form>
+  
+  <%- include('partials/footer') %> 
